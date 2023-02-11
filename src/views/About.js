@@ -1,20 +1,12 @@
-import { Typography } from "@mui/material";
-import { Stack } from "@mui/system";
+import AboutCard from "../components/AboutCard";
 import TemplatePage from "../shared/TemplatePage";
 
-function About() {
+export default function About() {
     return (
-        <TemplatePage>
-            <Typography
-                variant='h4'
-            >
-                About Me
-            </Typography>
+        <TemplatePage title="About Me">
+            <AboutCard />
         </TemplatePage>
     )
 
         
 }
-
-export default About
-

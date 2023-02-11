@@ -21,7 +21,7 @@ export function Navbar() {
             position="static"
         >
             <Container maxWidth='x1'>
-                <Toolbar >
+                <Toolbar>
                     <Typography
                         variant="h4"
                         noWrap
@@ -46,9 +46,10 @@ export function Navbar() {
                         sx={{ 
                             flexGrow: 1,
                             }}>
-                        {pages.map((page) => (
+                        {pages.map((page, index) => (
                                 <Link
                                     to={page.link}
+                                    key={index}
                                     style={{
                                         fontFamily: "'JetBrains Mono', 'monospace",
                                         color: 'inherit',
