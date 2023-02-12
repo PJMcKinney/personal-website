@@ -1,4 +1,4 @@
-import { Divider, Typography } from "@mui/material"
+import { Typography } from "@mui/material"
 import { Stack } from "@mui/system"
 
 export default function TemplatePage(props) {

@@ -31,7 +31,7 @@ export default function AboutCard() {
                         sx={{
                             border: 2,
                             borderRadius: 2,
-                            borderBlockColor: "inherit",
+                            borderColor: "inherit",
                         }}
                     />
                 </Stack>

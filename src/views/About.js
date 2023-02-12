@@ -6,7 +6,5 @@ export default function About() {
         <TemplatePage title="About Me">
             <AboutCard />
         </TemplatePage>
-    )
-
-        
+    )    
 }

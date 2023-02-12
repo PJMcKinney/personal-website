@@ -5,6 +5,7 @@ import About from './views/About';
 import Projects from './views/Projects';
 import theme from './shared/Theme'
 import './App.css'
+import ProjectCard from './components/ProjectCard';
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<About/>}/>
-        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/projects' element={<Projects/>}>
+          <Route path=':projectId' element={<ProjectCard/>}/>
+        </Route>
       </Routes>
     </ThemeProvider>
   )
