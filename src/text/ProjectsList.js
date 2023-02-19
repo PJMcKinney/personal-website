@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         name: "Remote Environment Monitoring Device",
-        githubLink: ""
+        githubLink: "https://www.youtube.com/watch?v=FB-sKY63AWo&ab_channel=FrontStart"
     },
     {
         id: 2,
@@ -13,6 +13,5 @@ export const projects = [
         id: 3,
         name: "Personal Website",
         githubLink: ""
-    },
-    
+    },    
 ]

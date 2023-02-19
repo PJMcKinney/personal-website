@@ -12,8 +12,14 @@ export const theme = createTheme({
     },
     typography: {
         fontFamily: ["'JetBrains Mono', 'monospace'"].join(','),
-        h4: {
+        h1: {
             fontSize: '2rem',
+        },
+        h2: {
+          fontSize: '1.6rem',
+        },
+        body1: {
+          fontSize: '0.8rem',
         },
       },
   })

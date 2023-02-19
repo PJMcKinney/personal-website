@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material"
-import { Stack } from "@mui/system"
+import { Container } from "@mui/system"
 
 export default function TemplatePage(props) {
     return(
-        <Stack my={2} mx={6} spacing={2}>
-            <Typography variant="h4">{props.title}</Typography>
+        <Container sx={{my: 5}}>
+            <Typography gutterBottom variant="h2">{props.title}</Typography>
             {props.children}
-        </Stack>
+        </Container>
     )
 }

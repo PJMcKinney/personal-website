@@ -12,16 +12,21 @@ export default function ProjectCard() {
     const projects = useOutletContext()
 
     return(
-        <Paper>
+        <Paper elevation={2}>
             <Stack m={2}>
                 <Stack justifyContent= "space-between" direction="row">
-                    <Stack>
+                    <Stack spacing={1}>
                         <Typography gutterBottom variant="h5">Title: {projects[projectId - 1].name}</Typography>
                         <Typography variant="h6">Description:</Typography>
-                        <Typography variant="body">{backgroundBody}</Typography>
-                        <Typography variant="body">Github: {<a href=""></a>}</Typography>
+                        <Typography variant="body1">{backgroundBody}</Typography>
                         <Typography variant="h6">Technologies:</Typography>
-                        <Typography variant="body">{educationBody}</Typography>
+                        <Typography variant="body1">{educationBody}</Typography>
+                        <Typography 
+                            variant="body1"
+                            
+                        >
+                            Github:{<a href={projects[projectId - 1].githubLink}>{projects[projectId - 1].name}</a>}
+                        </Typography>
                     </Stack>
                 </Stack>
             </Stack>

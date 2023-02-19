@@ -20,10 +20,11 @@ export function Navbar() {
             color="primary"
             position="static"
         >
-            <Container maxWidth='x1'>
+            <Container>
                 <Toolbar>
                     <Typography
-                        variant="h4"
+                        display={{sm: "block", xs: "none"}}
+                        variant="h1"
                         noWrap
                         component="a"
                         href="/"
@@ -40,7 +41,7 @@ export function Navbar() {
 
                     <Stack
                         direction='row'
-                        justifyContent="flex-end"
+                        justifyContent={{sm: "flex-end",xs: "center"}}
                         alignItems="baseline"
                         spacing={4}
                         sx={{ 
